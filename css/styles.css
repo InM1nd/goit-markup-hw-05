@@ -711,6 +711,8 @@ img {
   top: 8px;
   right: 8px;
 
-  background: url("../img/modal/cross.png") no-repeat center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
