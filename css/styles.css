@@ -133,6 +133,9 @@ img {
 
 .menu-link {
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .current::after {
@@ -154,6 +157,7 @@ img {
 .info-list {
   display: flex;
   margin-left: auto;
+  
 }
 
 .info-list .info-item + .info-item {
@@ -169,16 +173,22 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info:hover,
 .info:focus {
   color: var(--accent-color);
+  
 }
 
 .info-icon {
   margin-right: 10px;
   fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info:hover .info-icon,
@@ -241,6 +251,10 @@ img {
   height: 50px;
   border-radius: 4px;
   border: 0px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -406,10 +420,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1),
+   transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links:hover,
@@ -444,10 +463,15 @@ img {
 
   width: 170px;
   height: 92px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list .clients-item:not(:last-child) {
@@ -473,6 +497,8 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  
 }
 
 .filter-buttons .filter-button:not(:last-child) {
@@ -495,6 +521,13 @@ img {
   border-radius: 4px;
   color: var(--primary-text-color);
   background-color: var(--background-filter-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
 }
 .filter-btn:hover {
   color: var(--additional-text-color);
@@ -533,10 +566,14 @@ img {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
+
+  
 }
 
 .filter-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter__img {
